@@ -41,7 +41,7 @@ class Reservation {
 
   /** save or update a reservation */
 
-  static async save(){
+   async save(){
     if(this.id === undefined) {
       const result = await db.query(
         `INSERT INTO reservations (customer_id, start_at, num_guests, notes)
